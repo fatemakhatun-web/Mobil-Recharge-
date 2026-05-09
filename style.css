@@ -6,50 +6,69 @@
 }
 
 body{
-  background:#E6EBEF;
+  background:#e3ebf0;
   display:flex;
   justify-content:center;
 }
 
 .app{
-  width:390px;
+  width:340px;
   height: 750px;
   background:#F2F2F2;
   position:relative;
   overflow:hidden;
+  border-radius: 40px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  
+  margin-top: 100px;
 }
 
 /* HERO CARD */
 .hero{
   position:absolute;
-  top:20px;
-  left:20px;
-  right:20px;
+  top:25px;
+  left:19px;
+  right:19px;
   height:560px; /* 68% approx */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border-bottom-left-radius: 68px;
-  border-bottom-right-radius: 68px;
-  border: 2px solid #fff;
-  background:url('https://media.adeo.com/mkp/b75bdacf743c69a5fa628dd0213542f8/media.jpeg') center bottom/cover no-repeat;
+  border-bottom-left-radius: 67.5px;
+  border-bottom-right-radius: 69.7px;
+  border: 2px solid #F2F2F2;
+  /* background:url('https://media.adeo.com/mkp/b75bdacf743c69a5fa628dd0213542f8/media.jpeg') center bottom/cover no-repeat; */
+  background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRS99ntbImntBgPiOzjxiu5TSaIGWPETRCSA&s') center bottom/cover no-repeat;
   overflow:hidden;
 }
       /*******for chek*****/
 
 
+
+
+
+
 /* Overlay */
 .hero::after{
+  width: 2.8rem;
+  height: 2.8rem;
   content:"";
   position:absolute;
-  inset:0;
-  background:linear-gradient(
-    to bottom right,
-    rgba(0,0,60,0.55),
-    rgba(0,0,0,0.15)
-  );
+  background-color:transparent;
+  top: 18.5rem  ;
+  border-bottom-left-radius:1.553rem ;
+  box-shadow:0 25px #F2F2F2;
+  
+}
+.hero::before{
+  width: 2.8rem;
+  height: 2.8rem;
+  content:"";
+  position:absolute;
+  background-color: transparent;
+  top: 18.5rem  ;
+  right: 0;
+  border-bottom-right-radius: 1.553rem;
+  box-shadow:0 25px #F2F2F2;
+ 
 }
 
 
@@ -57,7 +76,7 @@ body{
 /* TEXT */
 .hero h1{
   position:absolute;
-  top:48px;
+  top:46px;
   left:30px;
   color:#fff;
   font-size:34px;
@@ -75,25 +94,48 @@ body{
 .cut-selection{
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     margin-top: -35;
     
 
 }
 
+.cut-selection::after{
+  width: 5.5rem;
+  height: 5.9rem;
+  content: "";
+  position: absolute;
+  background-color:transparent;
+  top: 29.2rem;
+  left: 28px;
+  border-top-left-radius: 50px;
+  box-shadow: -24px -15px   #F2F2F2;
+
+}
+
+.cut-selection::before{
+  width: 5.5rem;
+  height: 5.5rem;
+  content: "";
+  position: absolute;
+  background-color:transparent;
+  top: 29.2rem;
+  right: 28px;
+  border-top-right-radius: 50px;
+  box-shadow: 28px -11px #F2F2F2;
+;
+}
 
 
 .cut-left,
 .cut-right{
   position:absolute;
-  width:220px;
-  height:110px;
+  width:194px;
+  height:100px;
   background:#F2F2F2;
   border-radius:20px;
-
-
   z-index:6;
-  margin-bottom: 7%;
+  margin-bottom: 6.4%;
 }
 
 
@@ -116,9 +158,10 @@ body{
 /* BUTTON AREA */
 
 .main-btn-area{
-    height: 100px;
+    height: 90px;
     width: 100%;
     background: #F2F2F2;
+   
 }
 
 
@@ -128,6 +171,7 @@ body{
 .button-area{
   position:absolute;
   bottom:160px;
+  
   left:35px;
   right:35px;
   z-index:6;
@@ -146,10 +190,11 @@ body{
 
 .start-btn{
   width:100%;
-  height:75px;
+  height:70px;
   border:none;
   border-radius:50px;
   background:#ECECEC;
+  
   font-size:17px;
   font-weight:500;
   
@@ -170,9 +215,15 @@ body{
   padding:11px 34px;
   border:none;
   border-radius:28px;
-  background:linear-gradient(90deg,#4DA3FF,#2563EB);
+  background:linear-gradient(90deg,#3e94f1,#2563EB);
   color:white;
   font-size:13px;
+}
+
+.register a{
+  text-decoration: none;
+  color: #fff;
+
 }
 
 .login-btn{
